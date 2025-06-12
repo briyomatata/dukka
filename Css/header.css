@@ -1,0 +1,101 @@
+   .header{
+      background-color: black;
+      position: sticky;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .header .flex{
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header .flex .logo{
+      margin-right: auto;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    .header .flex .navbar a{
+      margin-left: 2rem;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .header .flex .navbar a:hover{
+      color: yellow;
+    }
+
+    .header .flex .cart{
+       margin-left: 2rem;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .header .flex .cart:hover{
+      color: yellow;
+    }
+
+    .header .flex .cart span{
+      padding: .3rem .5rem;
+      border-radius: .5rem;
+      background-color: #fff;
+      color: blue;
+      font-size: 2rem;
+    }
+
+    #menu-btn{
+      margin-left: 2rem;
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+    }
+
+
+    /* media queries */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    transition: 0.2s linear;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .flex .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: grey;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+    display: block;
+
+  }
+
+  .header .flex .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .header .flex .navbar a {
+    margin: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  
+}

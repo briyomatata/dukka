@@ -1,0 +1,49 @@
+a{
+    text-decoration: none;
+  color: currentColor;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+    
+}
+
+.menu{
+   display: flex;
+    justify-content: space-evenly;
+}
+
+.list {
+    display: flex;
+    
+}
+
+.list li{
+    justify-content: space-between;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.list li a{
+    justify-content: space-between;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list li a:hover{
+    color: yellow;
+}

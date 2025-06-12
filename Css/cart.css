@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: green;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+a:hover {
+  color: currentColor;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+}
+
+.btn,
+  .option-btn,
+  .delete-btn{
+    display: block;
+    width: 80%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+ .delete-btn{
+    margin-top: 0;
+    background-color: red;
+  }
+
+
+/* shopping cart */
+
+ .heading{
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+.shopping-cart table {
+  text-align: center;
+  width: 100%;
+}
+
+.shopping-cart table thead th {
+  padding: 1.2rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.shopping-cart table tr td {
+  padding: 1.5rem;
+  font-size: 2rem;
+  color: #000;
+}
+
+.shopping-cart table td img {
+  width: 25rem;
+}
+
+.shopping-cart table input[type="number"] {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  color: black;
+  width: 10rem;
+}
+
+.shopping-cart table input[type="submit"] {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: orange;
+  color: black;
+  color: #fff;
+  border-radius: .5rem;
+}
+
+.shopping-cart table input[type="submit"]:hover {
+  background-color: black;
+}
+
+.shopping-cart table .table-bottom {
+  background-color: beige;
+}
+
+.shopping-cart .checkout-btn {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.shopping-cart .checkout-btn a {
+  display: inline-block;
+  width: auto;
+   font-size: 14px;
+}
+
+.shopping-cart .checkout-btn a.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  user-select: none;
+  background-color: red;
+}
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+
+  .heading{
+    text-align: center;
+    color:yellow;
+  }
+
+  
+}
